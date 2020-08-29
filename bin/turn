@@ -4,4 +4,10 @@ require_relative "../lib/turn"
 board = Array.new(9, " ")
 puts "Welcome to Tic Tac Toe!"
 display_board(board)
+
+turn_count = 0
+
+while turn_count < 9
 turn(board)
+turn_count += 1
+end 
